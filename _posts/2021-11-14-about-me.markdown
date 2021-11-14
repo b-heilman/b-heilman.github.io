@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Let Me Introduce Myself"
+date:   2021-11-14 15:57:30 -0500
+categories: about update
+---
+I started coding as a hobby when I was 13, Basic was my gateway to this wonderful world.  I then moved to Javascript, because writing code in a browser was free in a time when we had to pay for compilers.  Over the years was a C, C++, and Java developer, before I found my first true love, PHP.
+
+Through PHP I became a full stack developer.  My affinity for JS helped me write cool UIs as I learned how to structure APIs using PHP.  I've stood up my own clusters, compiled code from source, and managed my own deployment pipelines.  I've written my own [stock trading AI][stock-ai], and even once dreamed of a java Agent that could be shared between a browser and server.  Java applets were never a good idea, that idea died quickly.
+
+I began to dream of a world where I could write the UI and the BE in the same language.  I even took a shot at writing [my own plugin based PHP framework][snap-php].  That never went anywhere because I was soon introduced to the wonders of AngularJS and Meteor.
+
+I started to focus on JS being the answer to my dreams, and I began working on bmoor as a way to tie concepts together.  I dabbled with Prototype and jQuery, but I wanted to be able to model my JS services better.  [Bmoor][bmoor] was born to support building these objects, although now a lot of that has been offloaded to the development of ES6, Webpack, and Typescript.  Much of that logic has since been removed and the library is simply a set of helper functions that facilitate working with data models.
+
+[bmoor-cache][bmoor-cache], [bmoor-data][bmoor-data], and [bmoor-comm][bmoor-comm] were born of the dream to abstract the connection between the UI and the BE services.  However, as time went on, I began to realize how BE frameworks seemed to not function the way I wanted them to in regards to accessing data from the UI.
+
+This began my time when I focused more on APIs as opposed to UI development.  I wanted something that could manage security on a model level.  I loved the ideas behind GraphQL, but also wanted to be able to define larger documents that we could read and write too manage the UI.  From an architectural stand point, I also understand the need for normalized and de-normalized data.  I wanted something that could simplify the joining of those concepts.
+
+[bmoor-crud][bmoor-crud] is my very opinionated framework in how people should deal with data, much of it coming from a UI perspective.  The data access is bottom up, and documents are able to secure things by combining different models into different shapes.  It uses eventing to allow the syncing of the internally normalized data into de-normalized documents that can be handed off to other systems.  You can interact with your data via atomic crud models, or using larger documents that allow multiple models to be written to at the same time.
+
+[stock-ai]: https://github.com/b-heilman/legacy-stock-ai
+[snap-php]: https://github.com/b-heilman/snap-php
+[bmoor]: https://github.com/b-heilman/bmoor
+[bmoor-data]: https://github.com/b-heilman/bmoo-data
+[bmoor-comm]: https://github.com/b-heilman/bmoor-comm
+[bmoor-cache]: https://github.com/b-heilman/bmoor-cache
+[bmoor-crud]: https://github.com/b-heilman/bmoor-crud
